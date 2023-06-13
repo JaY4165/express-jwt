@@ -5,7 +5,9 @@ declare global {
     interface ProcessEnv {
       PORT?: number;
       MONGOOSE_URI: string;
-      NODE_ENV: 'test' | 'dev' | 'prod';
+      NODE_ENV: "test" | "dev" | "prod";
+      JWT_PRIVATE_KEY: string;
+      JWT_PUBLIC_KEY: string;
     }
   }
 }
